@@ -91,7 +91,6 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         finish();
     }
 
-
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
         Toast.makeText(this, "Connection Failed", Toast.LENGTH_SHORT).show();

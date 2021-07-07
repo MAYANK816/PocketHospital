@@ -18,6 +18,7 @@
 
         <Button
             android:id="@+id/covid"
+            android:layout_margin="2dp"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:background="#FFF9F9"
@@ -29,7 +30,8 @@
 
         <Button
             android:id="@+id/noncovid"
-            android:layout_width="174dp"
+            android:layout_width="200dp"
+            android:layout_margin="2dp"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:onClick="NonClickCovid"
@@ -42,6 +44,7 @@
             android:id="@+id/Cdivider1"
             android:layout_width="200dp"
             android:layout_height="2dp"
+            android:layout_margin="2dp"
             android:background="@color/mainbackground"
             android:backgroundTint="@color/mainbackground"
             android:visibility="invisible"
@@ -52,6 +55,7 @@
             android:id="@+id/Ndivider2"
             android:layout_width="200dp"
             android:layout_height="2dp"
+            android:layout_margin="2dp"
             android:background="@color/mainbackground"
             android:backgroundTint="@color/mainbackground"
             android:visibility="invisible"
