@@ -283,7 +283,7 @@
                         android:layout_width="154dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:onClick="ForBed"
+                        android:onClick="ShareCare"
                         android:layout_marginLeft="5dp"
                         app:cardBackgroundColor="#E7FFFD"
                         app:cardCornerRadius="8dp"

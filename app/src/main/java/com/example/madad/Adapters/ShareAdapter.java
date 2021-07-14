@@ -20,8 +20,11 @@ import com.example.madad.Models.BedModel;
 import com.example.madad.Models.ShareAndCare;
 import com.example.madad.Models.slideImage;
 import com.example.madad.R;
+import com.example.madad.allFragments.ForBed;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.CollectionReference;
@@ -35,7 +38,8 @@ import java.util.List;
 public class ShareAdapter extends RecyclerView.Adapter<ShareAdapter.Viewholder> {
     Context context;
     List<ShareAndCare> helperList;
-
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("ShareAbleItem");
     public ShareAdapter(Context context, List<ShareAndCare> helperList) {
         this.context = context;
         this.helperList = helperList;
@@ -55,7 +59,27 @@ public class ShareAdapter extends RecyclerView.Adapter<ShareAdapter.Viewholder> 
         holder.Number.setText(helper.getNumber());
         holder.Adrs.setText(helper.getAddress());
         holder.Share.setText(helper.getShareAbleItem());
+        holder.callButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myRef.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                            Intent intent = new Intent(Intent.ACTION_DIAL);
+                            intent.setData(Uri.parse("tel:" + "+91-"+helper.getNumber().substring(helper.getNumber().indexOf(":")+1)));
+                            v.getContext().startActivity(intent);
+                        }
 
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                    }
+                });
+
+            }
+        });
     }
 
     @Override
@@ -66,14 +90,14 @@ public class ShareAdapter extends RecyclerView.Adapter<ShareAdapter.Viewholder> 
     public class Viewholder extends RecyclerView.ViewHolder {
 
        private TextView Name,Number,Adrs,Share;
+        private ImageButton callButton;
         public Viewholder(@NonNull View itemView) {
             super(itemView);
             Name=itemView.findViewById(R.id.SName);
             Number=itemView.findViewById(R.id.SNumber);
             Adrs=itemView.findViewById(R.id.SAdrs);
             Share=itemView.findViewById(R.id.SAlbetem);
-
-
+            callButton = itemView.findViewById(R.id.calluser);
         }
     }
 }

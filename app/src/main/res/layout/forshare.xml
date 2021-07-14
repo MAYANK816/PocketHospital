@@ -77,6 +77,14 @@
 
         </LinearLayout>
 
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/calluser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/telephone"
+            android:cropToPadding="false"></androidx.appcompat.widget.AppCompatImageButton>
 
     </androidx.cardview.widget.CardView>
 

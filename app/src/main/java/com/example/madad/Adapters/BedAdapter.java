@@ -62,7 +62,6 @@ public class BedAdapter extends RecyclerView.Adapter<BedAdapter.MyViewHolder> {
                             v.getContext().startActivity(intent);
                         }
 
-
                     }
 
                     @Override

@@ -31,12 +31,11 @@ public class Share extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share);
         recyclerView = findViewById(R.id.ShareRecycler);
-        databaseReference = FirebaseDatabase.getInstance().getReference("ShareAbleItem");
+        databaseReference = database.getInstance().getReference("ShareAbleItem");
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
         arrayList =new ArrayList<>();
-
         adapter = new ShareAdapter(getApplicationContext(),arrayList);
         recyclerView.setAdapter(adapter);
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -44,10 +43,10 @@ public class Share extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                    ShareAndCare s = new ShareAndCare();
-                   s.setName(dataSnapshot.child("name").getValue().toString());
-                   s.setNumber(dataSnapshot.child("number").getValue().toString());
-                   s.setAddress(dataSnapshot.child("address").getValue().toString());
-                   s.setShareAbleItem(dataSnapshot.child("shareAbleItem").getValue().toString());
+                   s.setName("Name: "+dataSnapshot.child("name").getValue().toString());
+                   s.setNumber("Number: "+dataSnapshot.child("number").getValue().toString());
+                   s.setAddress("Address: "+dataSnapshot.child("address").getValue().toString());
+                   s.setShareAbleItem("Item: "+dataSnapshot.child("shareAbleItem").getValue().toString());
                    arrayList.add(s);
 
                 }
