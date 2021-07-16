@@ -1,4 +1,4 @@
-![WhatsApp Image 2021-07-14 at 3 04 15 PM (1)](https://user-images.githubusercontent.com/63389169/125923773-e91f332e-ed38-46b3-8d72-6802dd9352e2.jpeg)
+
 # Madad
 This App is made for HACKCOVID 2.0 Hackathon 
 #Idea
@@ -8,3 +8,4 @@ All this information shown to users and for some feature users have to fill the 
 
 # ScreenShots :
 
+![Untitled-1](https://user-images.githubusercontent.com/63389169/125924498-a5da6799-b233-4a24-9a9f-6a122804554d.jpg)
