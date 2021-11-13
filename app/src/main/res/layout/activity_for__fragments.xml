@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".allFragments.For_Fragments"
+    tools:context="com.example.pockethospital.allFragments.For_Fragments"
     android:id="@+id/fragmentshow">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

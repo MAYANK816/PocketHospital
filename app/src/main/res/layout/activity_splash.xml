@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splash.SplashActivity">
+    tools:context="com.example.pockethospital.splash.SplashActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -41,7 +41,7 @@
         android:layout_marginEnd="50dp"
         android:fontFamily="@font/allerta"
         android:gravity="center"
-        android:text="Wear a mask"
+        android:text="Be Happy ,"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,7 @@
         android:layout_marginBottom="74dp"
         android:fontFamily="@font/chonburi"
         android:gravity="center_horizontal"
-        android:text="Save Lives"
+        android:text="Be Healthy"
         android:textSize="30sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"

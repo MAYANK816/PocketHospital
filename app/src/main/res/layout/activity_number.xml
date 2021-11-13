@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainbackground"
-    tools:context=".Login.NumberActivity">
+    tools:context="com.example.pockethospital.Login.NumberActivity">
 
     <com.hbb20.CountryCodePicker
         android:id="@+id/countryCodePicker"

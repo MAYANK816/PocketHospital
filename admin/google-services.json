@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "885857459263",
+    "firebase_url": "https://madad-efc4b-default-rtdb.firebaseio.com",
     "project_id": "madad-efc4b",
     "storage_bucket": "madad-efc4b.appspot.com"
   },
@@ -42,6 +43,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "885857459263-banas6phq6icrq3apdqpo7cmlumgs760.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.madad",
+            "certificate_hash": "dffe83af0a41d44f0e10ba5f36d4c8ca9931632c"
+          }
+        },
         {
           "client_id": "885857459263-c2mfpkq39m17o4i5f5i14p80uvj6hcgr.apps.googleusercontent.com",
           "client_type": 3

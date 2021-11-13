@@ -37,35 +37,6 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:885857459263:android:a79f0674b125c6089f6c8a",
-        "android_client_info": {
-          "package_name": "com.example.covizone_2"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "885857459263-c2mfpkq39m17o4i5f5i14p80uvj6hcgr.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAgP3Rgz1A5xp5gJxz6RrTdMbgiyaBNlZQ"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "885857459263-c2mfpkq39m17o4i5f5i14p80uvj6hcgr.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:885857459263:android:e39c7a8397c0b6e69f6c8a",
         "android_client_info": {
           "package_name": "com.example.madad"
@@ -73,11 +44,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "885857459263-k2t475a4p7mebr96833s8a1khh2kqaju.apps.googleusercontent.com",
+          "client_id": "885857459263-banas6phq6icrq3apdqpo7cmlumgs760.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.madad",
-            "certificate_hash": "1b748361f62825439299b3cc8fe0f9c28246900c"
+            "certificate_hash": "dffe83af0a41d44f0e10ba5f36d4c8ca9931632c"
           }
         },
         {

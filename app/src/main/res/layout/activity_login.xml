@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".Login.LoginActivity">
+    tools:context="com.example.pockethospital.Login.LoginActivity">
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
@@ -25,13 +25,14 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:elevation="5dp"
-        android:shadowColor="@color/black"
         android:layout_height="65dp"
         android:background="@color/mainbackground"
+        android:elevation="5dp"
         android:onClick="otpSignIn"
-        android:textColor="@color/white"
+        android:shadowColor="@color/black"
         android:text="Mobile Number"
+        app:cardCornerRadius="18dp"
+        android:textColor="#6D4C41"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

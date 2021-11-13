@@ -95,8 +95,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-    public void CovidBed(View view) {
+    public void ForBed(View view) {
         startActivity(new Intent(this,Bed.class));
 
+    }
+
+    public void ambulance(View view) {
+        startActivity(new Intent(this,Ambulance.class));
+    }
+
+    public void BloodDonation(View view) {
+        startActivity(new Intent(this,Bgroup.class));
+    }
+
+    public void ShareCare(View view) {
+        startActivity(new Intent(getApplicationContext(),shareActivity.class));
     }
 }

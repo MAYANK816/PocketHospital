@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    android:background="@drawable/background"
+    tools:context="com.example.pockethospital.MainActivity">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navmenu"
@@ -28,14 +29,14 @@
                 android:id="@+id/toolbar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@color/mainbackground"
+                android:background="@android:color/transparent"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:navigationIcon="@drawable/ic_baseline_menu_24"
                 app:title="Welcome"
-                app:titleTextColor="@color/black" />
+                app:titleTextColor="@color/white" />
 
             <LinearLayout
                 android:id="@+id/linearLayout"
@@ -44,6 +45,7 @@
                 android:layout_margin="10dp"
                 android:orientation="vertical"
                 android:padding="5dp"
+
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +58,7 @@
                     android:padding="15dp"
                     android:text="@string/madad"
                     android:textAlignment="textStart"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="25sp"
                     android:textStyle="bold" />
 
@@ -69,22 +71,25 @@
 
                 <androidx.gridlayout.widget.GridLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="550dp"
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="100dp"
+
+                    android:layout_marginTop="80dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="73dp"
-                    android:background="@color/white"
+
+                    android:padding="12dp"
                     app:columnCount="3"
-                    app:rowCount="3">
+                    app:rowCount="4">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="162dp"
+                        android:layout_height="80dp"
                         android:onClick="oxygen"
-                        app:cardBackgroundColor="#E7FFFD"
-                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="#FFCE45"
+
+                        app:cardCornerRadius="12dp"
                         app:layout_column="0"
                         app:layout_columnWeight="1"
                         app:layout_gravity="fill"
@@ -93,6 +98,7 @@
 
                         <LinearLayout
                             android:id="@+id/linear"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical|center_horizontal"
@@ -100,11 +106,11 @@
 
                             <ImageView
                                 android:id="@+id/imageView"
-                                android:layout_width="100dp"
-                                android:layout_height="75dp"
+                                android:layout_width="80dp"
+                                android:layout_height="65dp"
                                 android:contentDescription="@string/todo"
                                 android:elevation="8dp"
-                                app:srcCompat="@drawable/coronavirus" />
+                                app:srcCompat="@drawable/oxygen" />
 
                             <TextView
                                 android:id="@+id/Home"
@@ -112,7 +118,7 @@
                                 android:layout_height="50dp"
                                 android:text="@string/oxygen_cylinder"
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -123,8 +129,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:onClick="onlineDoc"
-                        app:cardBackgroundColor="#E7FFFD"
-                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="#FFCE45"
+                        app:cardCornerRadius="12dp"
                         app:layout_column="1"
                         app:layout_columnWeight="1"
                         app:layout_gravity="fill"
@@ -140,11 +146,11 @@
 
                             <ImageView
                                 android:id="@+id/imageView1"
-                                android:layout_width="100dp"
-                                android:layout_height="75dp"
+                                android:layout_width="80dp"
+                                android:layout_height="65dp"
                                 android:contentDescription="@string/todo"
                                 android:elevation="8dp"
-                                app:srcCompat="@drawable/coronavirus" />
+                                app:srcCompat="@drawable/doctor" />
 
                             <TextView
                                 android:id="@+id/mail1"
@@ -152,7 +158,7 @@
                                 android:layout_height="50dp"
                                 android:text="@string/online_doctor"
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -163,8 +169,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:onClick="findMedicine"
-                        app:cardBackgroundColor="#E7FFFD"
-                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="#FFCE45"
+                        app:cardCornerRadius="12dp"
                         app:layout_column="0"
                         app:layout_columnWeight="1"
                         app:layout_gravity="fill"
@@ -180,19 +186,19 @@
 
                             <ImageView
                                 android:id="@+id/imageView2"
-                                android:layout_width="100dp"
-                                android:layout_height="75dp"
+                                android:layout_width="80dp"
+                                android:layout_height="65dp"
                                 android:contentDescription="TODO"
                                 android:elevation="8dp"
-                                app:srcCompat="@drawable/coronavirus" />
+                                app:srcCompat="@drawable/medicine" />
 
                             <TextView
                                 android:id="@+id/Login"
-                                android:layout_width="match_parent"
+                                android:layout_width="102dp"
                                 android:layout_height="50dp"
                                 android:text="@string/find_medicine"
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -204,8 +210,8 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="5dp"
                         android:onClick="mealActivity"
-                        app:cardBackgroundColor="#E7FFFD"
-                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="#FFCE45"
+                        app:cardCornerRadius="12dp"
                         app:layout_column="1"
                         app:layout_columnWeight="1"
                         app:layout_gravity="fill"
@@ -221,10 +227,10 @@
 
                             <ImageView
                                 android:id="@+id/imageView3"
-                                android:layout_width="100dp"
-                                android:layout_height="75dp"
+                                android:layout_width="80dp"
+                                android:layout_height="65dp"
                                 android:elevation="8dp"
-                                app:srcCompat="@drawable/coronavirus" />
+                                app:srcCompat="@drawable/fooddonation" />
 
                             <TextView
                                 android:id="@+id/Mail3"
@@ -232,7 +238,7 @@
                                 android:layout_height="50dp"
                                 android:text="@string/meals_delivery"
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -242,10 +248,9 @@
                         android:layout_width="154dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-
                         android:onClick="ForBed"
-                        app:cardBackgroundColor="#E7FFFD"
-                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="#FFCE45"
+                        app:cardCornerRadius="12dp"
                         app:layout_column="0"
                         app:layout_columnWeight="1"
                         app:layout_gravity="fill"
@@ -261,11 +266,11 @@
 
                             <ImageView
                                 android:id="@+id/imageView6"
-                                android:layout_width="100dp"
-                                android:layout_height="75dp"
+                                android:layout_width="80dp"
+                                android:layout_height="65dp"
                                 android:contentDescription="TODO"
                                 android:elevation="8dp"
-                                app:srcCompat="@drawable/coronavirus" />
+                                app:srcCompat="@drawable/bed" />
 
                             <TextView
                                 android:id="@+id/covid"
@@ -273,7 +278,7 @@
                                 android:layout_height="50dp"
                                 android:text="@string/covid_bed"
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -282,11 +287,11 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="154dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="5dp"
                         android:onClick="ShareCare"
-                        android:layout_marginLeft="5dp"
-                        app:cardBackgroundColor="#E7FFFD"
-                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="#FFCE45"
+                        app:cardCornerRadius="12dp"
                         app:layout_column="1"
                         app:layout_columnWeight="1"
                         app:layout_gravity="fill"
@@ -302,11 +307,11 @@
 
                             <ImageView
                                 android:id="@+id/imageView7"
-                                android:layout_width="100dp"
-                                android:layout_height="75dp"
+                                android:layout_width="80dp"
+                                android:layout_height="65dp"
                                 android:contentDescription="TODO"
                                 android:elevation="8dp"
-                                app:srcCompat="@drawable/coronavirus" />
+                                app:srcCompat="@drawable/donation" />
 
                             <TextView
                                 android:id="@+id/shared"
@@ -314,7 +319,89 @@
                                 android:layout_height="50dp"
                                 android:text="Share and care"
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="154dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:onClick="ambulance"
+                        app:cardBackgroundColor="#FFCE45"
+                        app:cardCornerRadius="12dp"
+                        app:layout_column="0"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill"
+                        app:layout_row="3"
+                        app:layout_rowWeight="1">
+
+                        <LinearLayout
+                            android:id="@+id/linear8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="100dp"
+                                android:layout_height="75dp"
+                                android:contentDescription="TODO"
+                                android:elevation="8dp"
+                                app:srcCompat="@drawable/ambulance" />
+
+                            <TextView
+                                android:id="@+id/ambulance"
+                                android:layout_width="105dp"
+                                android:layout_height="50dp"
+                                android:text="Ambulance "
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="154dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:onClick="BloodDonation"
+                        app:cardBackgroundColor="#FFCE45"
+                        app:cardCornerRadius="12dp"
+                        app:layout_column="1"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill"
+                        app:layout_row="3"
+                        app:layout_rowWeight="1">
+
+                        <LinearLayout
+                            android:id="@+id/linear9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView9"
+                                android:layout_width="100dp"
+                                android:layout_height="75dp"
+                                android:contentDescription="TODO"
+                                android:elevation="8dp"
+                                app:srcCompat="@drawable/blooddonation" />
+
+                            <TextView
+                                android:id="@+id/blooddonation"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:text="Blood Donation"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>

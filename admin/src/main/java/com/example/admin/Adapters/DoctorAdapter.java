@@ -84,7 +84,7 @@ public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.Viewholder
             patientname=itemView.findViewById(R.id.patientName);
             patientnumber=itemView.findViewById(R.id.patientNumber);
             patientid=itemView.findViewById(R.id.patientId);
-            patientcomplaint=itemView.findViewById(R.id.patientComplaint);
+            patientcomplaint=itemView.findViewById(R.id.patientgrp);
             callButton=itemView.findViewById(R.id.btncall);
 
         }

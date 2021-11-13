@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.madad">
+    package="com.example.pockethospital">
 
     <uses-permission android:name="android.permission.INTERNET " />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -13,7 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".Features.Share"></activity>
+        <activity
+            android:name=".Features.BloodDonation"
+            android:exported="true" />
+        <activity
+            android:name=".Features.Ambulance"
+            android:exported="true" />
+        <activity android:name=".Features.Share" />
         <activity android:name=".allFragments.ForBed" />
         <activity android:name=".Features.Oxygen_Cylinder" />
         <activity android:name=".donationActivity" />
@@ -26,7 +32,9 @@
         <activity android:name=".Login.LoginActivity" />
         <activity android:name=".Login.OtpActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".splash.SplashActivity">
+        <activity
+            android:name=".splash.SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#e2f9f8"
-    tools:context=".allFragments.Find_Medicine">
+    android:background="#0096FF"
+    tools:context="com.example.pockethospital.allFragments.Find_Medicine">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:text="Upload Image of Your Medicine Pack"
                 android:gravity="center"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 android:layout_marginTop="20dp"
                 android:textSize="20sp"
@@ -62,7 +62,7 @@
                     android:layout_marginBottom="12dp"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Name:"
-                    android:textColor="#000000"
+                    android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="normal"
                     app:layout_constraintBottom_toTopOf="@+id/patientName"
@@ -81,7 +81,7 @@
                     android:layout_marginBottom="21dp"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Number:"
-                    android:textColor="#000000"
+                    android:textColor="#ffffff"
                     android:textSize="20sp"
                     android:textStyle="normal"
                     app:layout_constraintBottom_toTopOf="@+id/patientNumber"
@@ -131,7 +131,7 @@
                     android:layout_marginBottom="20dp"
                     android:fontFamily="@font/roboto_medium"
                     android:text="Address:"
-                    android:textColor="#000000"
+                    android:textColor="#ffffff"
                     android:textSize="20sp"
                     android:textStyle="normal"
                     app:layout_constraintBottom_toTopOf="@+id/patientAddress"

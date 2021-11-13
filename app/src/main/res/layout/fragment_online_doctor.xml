@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e2f9f8"
-    tools:context=".allFragments.OnlineDoctor">
+    android:background="@color/mainbackground"
+    tools:context="allFragments.OnlineDoctor">
 
     <ScrollView
         android:layout_width="match_parent"

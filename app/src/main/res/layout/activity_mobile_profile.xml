@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Features.mobileProfile">
+    tools:context="com.example.pockethospital.Features.mobileProfile">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navmenu"

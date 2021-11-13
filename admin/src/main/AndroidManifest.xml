@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".Bed"></activity>
+        <activity
+            android:name=".Bgroup"
+            android:exported="true" />
+        <activity
+            android:name=".Ambulance"
+            android:exported="true" />
+        <activity android:name=".Bed" />
         <activity android:name=".shareActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".full_Medicine" />

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/mainbackground"
-    tools:context=".donationActivity">
+    tools:context="com.example.pockethospital.donationActivity">
 
     <EditText
         android:id="@+id/amount_Donate"
@@ -19,6 +19,7 @@
         android:ems="10"
         android:inputType="number"
         android:hint="₹ xxxx"
+        android:textStyle="bold"
         android:textColor="#373737"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,6 +34,7 @@
         android:layout_marginStart="75dp"
         android:layout_marginEnd="75dp"
         android:background="@drawable/login2"
+        android:textStyle="bold"
         android:onClick="Donate"
         android:text="Donate"
         android:textColor="#FFFFFF" />

@@ -6,8 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="@color/mainbackground"
     android:padding="2dp"
-    tools:context=".Features.profile">
+    tools:context="com.example.pockethospital.Features.profile">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navmenu"
@@ -24,24 +25,24 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="@android:color/transparent"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:navigationIcon="@drawable/ic_baseline_menu_24"
                 app:title="Welcome In To Profile"
-                app:titleTextColor="@color/black" />
+                app:titleTextColor="@color/white" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="800dp"
                 android:layout_marginTop="8dp"
+                android:id="@id/linearLayout"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -79,7 +80,7 @@
                         android:layout_marginTop="55dp"
                         android:layout_marginEnd="37dp"
                         android:layout_marginBottom="450dp"
-                        android:src="@drawable/ic_baseline_profile" />
+                        android:src="@drawable/user" />
 
                     <TextView
                         android:id="@+id/name"
@@ -95,7 +96,7 @@
                         android:layout_marginBottom="290dp"
                         android:paddingLeft="20dp"
                         android:text="Name:"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="25sp" />
 
                     <TextView
@@ -113,7 +114,7 @@
                         android:gravity="left"
                         android:paddingLeft="20dp"
                         android:text="Email:"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="25sp" />
 
 

@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Features.About">
+    tools:context="com.example.pockethospital.Features.About">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navmenu"
@@ -29,19 +29,21 @@
                 android:id="@+id/toolbar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+
+                android:background="@android:color/transparent"
+                android:gravity="center"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+
                 app:navigationIcon="@drawable/ic_baseline_menu_24"
                 app:title="About Us"
-
-                android:gravity="center"
-                app:titleTextColor="@color/black" />
+                app:titleTextColor="@color/white" />
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:id="@+id/linearLayout"
                 android:layout_height="800dp"
                 android:layout_marginTop="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"

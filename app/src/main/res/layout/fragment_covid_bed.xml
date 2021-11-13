@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".allFragments.CovidBed"
+    tools:context="com.example.pockethospital.allFragments.CovidBed"
     android:padding="10dp">
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

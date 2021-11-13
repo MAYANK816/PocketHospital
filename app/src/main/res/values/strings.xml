@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MADAD</string>
+    <string name="app_name">Pocket Hospital</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -10,7 +10,7 @@
     <string name="oxygen_cylinder">Oxygen cylinder</string>
     <string name="todo">TODO</string>
     <string name="online_doctor">Online Doctor</string>
-    <string name="madad">Madad</string>
+    <string name="madad">Pocket Hopital</string>
 
     <string name="non_covid_bed">Non Covid Bed</string>
 

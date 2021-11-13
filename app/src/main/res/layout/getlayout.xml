@@ -86,6 +86,7 @@
 
 
         </LinearLayout>
+
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/callHospital"
             android:layout_width="50dp"
@@ -93,7 +94,8 @@
             android:layout_marginStart="300dp"
             android:layout_marginTop="150dp"
             android:background="@drawable/telephone"
-            android:cropToPadding="false"></androidx.appcompat.widget.AppCompatImageButton>
+            android:cropToPadding="false"
+            tools:ignore="SpeakableTextPresentCheck"></androidx.appcompat.widget.AppCompatImageButton>
 
     </androidx.cardview.widget.CardView>
 

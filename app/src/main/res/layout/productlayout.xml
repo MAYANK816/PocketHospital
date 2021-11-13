@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linear"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:elevation="15dp"
     android:orientation="horizontal"
@@ -11,8 +11,8 @@
     app:layout_constraintTop_toTopOf="parent">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="380dp"
-        android:layout_height="190dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="4dp"
         android:layout_marginTop="10dp"
@@ -22,9 +22,9 @@
 
         <ImageView
             android:id="@+id/image"
-            android:layout_width="370dp"
-            android:layout_height="176dp"
-            android:background="#e2f9f8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:scrollbarAlwaysDrawVerticalTrack="true"></ImageView>
 
