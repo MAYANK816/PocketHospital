@@ -3,12 +3,13 @@
 # For User App
 
 
+![user app](https://user-images.githubusercontent.com/63389169/141667155-2e58a868-6327-466c-8898-630d1d66e9d9.png)
 
-![user Panel](https://user-images.githubusercontent.com/63389169/141667061-22489623-af4a-4e70-8033-b24ab9344431.png)
+
 
 
 # For Admin App 
 
 
+![admin app](https://user-images.githubusercontent.com/63389169/141667156-d4f307db-38e9-4802-89a5-d6e2769eb160.png)
 
-![admin app](https://user-images.githubusercontent.com/63389169/141667067-4b4fb985-1dad-4158-a065-527c500bfbb4.png)
