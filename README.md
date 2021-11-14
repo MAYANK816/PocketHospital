@@ -1,11 +1,14 @@
+# Pocket Hospital
 
-# Madad
-This App is made for HACKCOVID 2.0 Hackathon 
-#Idea
-The idea behind this app is to help the people to overcome from this covid-19 Pandemic . Basically the app includes two modules one for admin and one for the users.
-This app provides the information regarding number beds in hospital , oxygen cylinders , medicines from home , 24/7 support with Covid-19 testing facility , Meals delivery free for needy ones.
-All this information shown to users and for some feature users have to fill the info which will be shown in admin panel and cross checked by our team then user can easily avail that facility.
+# For User App
 
-# ScreenShots :
 
-![Untitled-1](https://user-images.githubusercontent.com/63389169/125924498-a5da6799-b233-4a24-9a9f-6a122804554d.jpg)
+
+![user Panel](https://user-images.githubusercontent.com/63389169/141667061-22489623-af4a-4e70-8033-b24ab9344431.png)
+
+
+# For Admin App 
+
+
+
+![admin app](https://user-images.githubusercontent.com/63389169/141667067-4b4fb985-1dad-4158-a065-527c500bfbb4.png)
