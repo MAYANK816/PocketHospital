@@ -8,12 +8,14 @@
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/drawable/loginbutton.xml" value="0.23425925925925925" />
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/drawable/logininput.xml" value="0.23425925925925925" />
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/activity_ambulance.xml" value="0.223731884057971" />
+        <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/activity_bed.xml" value="0.2341485507246377" />
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/activity_bgroup.xml" value="0.223731884057971" />
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/activity_find__meadicine.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/activity_login_admin.xml" value="0.23777173913043478" />
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/activity_main.xml" value="0.223731884057971" />
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/activity_meals_.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/activity_online__doctor.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/activity_oxygen.xml" value="0.2341485507246377" />
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/adminnavheader.xml" value="0.223731884057971" />
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/buylayout.xml" value="0.223731884057971" />
         <entry key="..\:/Android Projects/Madad/admin/src/main/res/layout/grouplayout.xml" value="0.223731884057971" />
