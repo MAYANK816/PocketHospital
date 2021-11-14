@@ -276,7 +276,7 @@
                                 android:id="@+id/covid"
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
-                                android:text="@string/covid_bed"
+                                android:text="Hospital Bed"
                                 android:textAlignment="center"
                                 android:textColor="@color/white"
                                 android:textSize="20sp"
